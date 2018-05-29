@@ -18,7 +18,7 @@ class Bus
   end
 
   def empty_bus
-    @passengers = []
+    @passengers.clear
   end
 
   def pick_up_from_queue(stop)

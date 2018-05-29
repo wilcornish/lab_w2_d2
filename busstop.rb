@@ -12,7 +12,7 @@ class BusStop
   end
 
   def empty_queue
-    @queue = []
+    @queue.clear
   end
 
 
