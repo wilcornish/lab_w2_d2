@@ -1,4 +1,4 @@
-class Passenger
+class Person
 
   attr_reader(:name, :age)
 
