@@ -11,5 +11,11 @@ class Bus
   def pick_up(person)
     @passengers.push(person)
   end
+  #
+  def drop_off(person)
+    arrived  = @passengers.index(person)
+    @passengers.delete_at(arrived)
+  end
 
 end
+ 
