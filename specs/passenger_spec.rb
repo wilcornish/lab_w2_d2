@@ -3,13 +3,13 @@ require_relative("../passenger.rb")
 
 class PassengerTest < MiniTest::Test
 
-  def setup(name, age)
-    name = "Barry"
-    age = 21
+  def setup
+    @passenger1 = Passenger.new("Barry", 21)
+
   end
 
 def test_passenger_name
-  assert_equal("Barry", Passenger.name)
+  assert_equal("Barry", @passenger1.name())
 end
 
 end
