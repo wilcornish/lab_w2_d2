@@ -12,4 +12,8 @@ def test_passenger_name
   assert_equal("Barry", @passenger1.name())
 end
 
+def test_passenger_age
+  assert_equal(21, @passenger1.age())
+end
+
 end
