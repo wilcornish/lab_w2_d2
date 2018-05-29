@@ -8,5 +8,8 @@ class Bus
     @passengers = []
   end
 
+  def pick_up(person)
+    @passengers.push(person)
+  end
 
 end
