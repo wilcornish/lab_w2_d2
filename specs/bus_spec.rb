@@ -17,5 +17,8 @@ class BusTest < MiniTest::Test
     assert_equal("Cowdenbeath", @bus1.destination())
   end
 
+  def test_passenger_count
+    assert_equal(0, @bus1.passengers().count())
+  end
 
 end

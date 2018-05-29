@@ -1,6 +1,6 @@
 class Bus
 
-  attr_reader(:route, :destination)
+  attr_reader(:route, :destination, :passengers)
 
   def initialize(route, destination)
     @route = route
