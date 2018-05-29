@@ -15,4 +15,11 @@ class BusStopTest < MiniTest::Test
   def test_get_busstop_name
     assert_equal("Kelty Stop", @busstop1.name())
   end
+
+  def test_person_joins_queue
+    @busstop1.join_queue(@person1)
+    assert_equal(1, @busstop1.queue().count())
+    refute_nil(@busstop1.queue()[0])
+  end
+
 end
