@@ -22,7 +22,9 @@ class Bus
   end
 
   def pick_up_from_queue(stop)
-
+    queue = stop.queue()
+    @passengers.concat(queue)
+    stop.empty_queue()
   end
 
 end

@@ -22,4 +22,11 @@ class BusStopTest < MiniTest::Test
     refute_nil(@busstop1.queue()[0])
   end
 
+  def test_empty_queue
+    @bus1.pick_up(@person1)
+    @bus1.pick_up(@person2)
+    @bus1.empty_bus()
+    assert_equal(0, @bus1.passengers().count)
+  end
+
 end
